@@ -11,7 +11,156 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Nunito:wght@500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     :root{--cream:#fff8e9;--paper:#fffdf7;--ink:#493d35;--muted:#796b60;--coral:#e98777;--orange:#f2a85f;--yellow:#f7d779;--line:#f0dfc8;--green:#a9bd83;--font:"Noto Sans TC",sans-serif;--en:Nunito,sans-serif}
+    *{box-sizing:bord<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff5df">
+  <meta name="description" content="吃飽飽桌遊：用食物卡和消化部位卡認識營養與消化腺功能的童趣遊戲。">
+  <title>吃飽飽 — A Little Game Around the Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Nunito:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{--cream:#fff8e9;--paper:#fffdf7;--ink:#493d35;--muted:#796b60;--coral:#e98777;--orange:#f2a85f;--yellow:#f7d779;--line:#f0dfc8;--green:#a9bd83;--font:"Noto Sans TC",sans-serif;--en:Nunito,sans-serif}
     *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}body{margin:0;background:radial-gradient(circle at 10% 15%,#fff0d0 0,transparent 23%),radial-gradient(circle at 92% 34%,#ffe9dc 0,transparent 25%),var(--cream);color:var(--ink);font-family:var(--font);line-height:1.75;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.28;background-image:radial-gradient(#efc993 1px,transparent 1px);background-size:24px 24px;mask-image:linear-gradient(to bottom,transparent,#000 18%,#000 80%,transparent);z-index:-1}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 44px));margin:auto}.en,.eyebrow,.tag{font-family:var(--en)}
+    .topbar{position:sticky;top:0;z-index:10;background:rgba(255,250,239,.9);backdrop-filter:blur(14px);border-bottom:1px solid rgba(215,177,127,.3)}.nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font:900 15px var(--en);letter-spacing:-.04em;color:#5e493b}.brand i{display:inline-block;width:11px;height:11px;margin-right:9px;border-radius:50% 50% 50% 0;background:var(--coral);transform:rotate(-45deg)}.back{font:800 11px var(--en);letter-spacing:.08em;color:#8b6d56}.back:hover{color:#d17668}
+    .hero{padding:70px 0 76px;display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}.eyebrow{font-size:11px;letter-spacing:.15em;color:#c17955;font-weight:900}.hero h1{margin:13px 0 18px;font-size:clamp(48px,7vw,84px);line-height:1.04;letter-spacing:-.07em;color:#574139}.hero h1 span{display:block;color:#dd806f}.lead{max-width:490px;color:#77665a;font-size:15px;line-height:2}.hero-badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}.badge{padding:7px 13px;border:1px solid #f0d7b6;border-radius:99px;background:#fffdf7;color:#8d6a4d;font-size:11px;font-weight:700}
+    .board-frame{position:relative;padding:13px;border:1px solid #efd9b6;border-radius:28px;background:#fffdf8;box-shadow:0 20px 45px rgba(148,101,62,.14);transform:rotate(1deg)}.board-frame:before{content:"✦  ✿  ✦";position:absolute;right:20px;top:-17px;z-index:1;color:#e59a79;background:#fff8e9;padding:0 10px;font-size:20px;letter-spacing:.25em}.board-frame img{display:block;width:100%;max-height:680px;object-fit:contain;border-radius:18px;background:#f0ece7}.board-caption{display:flex;justify-content:space-between;gap:12px;padding:12px 6px 0;color:#9a806a;font:800 10px var(--en);letter-spacing:.1em}
+    .section{padding:70px 0;border-top:1px solid var(--line)}.section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:28px}.section-head h2{margin:7px 0 0;font-size:clamp(33px,5vw,54px);line-height:1.1;letter-spacing:-.06em;color:#574139}.section-head h2 span{color:#df8772}.section-copy{max-width:440px;color:var(--muted);font-size:13px;line-height:1.95}.section-copy p{margin:0}
+    .game-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.game-card{padding:22px;border:1px solid #f0dfc8;border-radius:22px;background:rgba(255,253,247,.9);box-shadow:0 8px 22px rgba(149,104,64,.06)}.game-card .icon{font-size:25px}.game-card h3{margin:10px 0 6px;font-size:17px}.game-card p{margin:0;color:var(--muted);font-size:12px;line-height:1.9}.count{display:inline-flex;margin-top:13px;padding:4px 9px;border-radius:99px;background:#fff0dc;color:#9a6a47;font-size:10px;font-weight:800}
+    .howto{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;counter-reset:step}.step{position:relative;padding:19px;border-radius:20px;background:#fffdf7;border:1px solid #efdfc9;counter-increment:step}.step:before{content:"0" counter(step);display:grid;place-items:center;width:35px;height:35px;margin-bottom:14px;border-radius:13px 13px 13px 4px;background:#f7d779;color:#66503e;font:900 14px var(--en)}.step h3{margin:0 0 7px;font-size:14px}.step p{margin:0;color:var(--muted);font-size:11px;line-height:1.85}
+    .cards-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card-show{overflow:hidden;border:1px solid #efdcc0;border-radius:25px;background:var(--paper);box-shadow:0 12px 30px rgba(149,104,64,.08)}.card-show img{display:block;width:100%;height:370px;object-fit:cover;object-position:top center;background:#fff}.card-text{padding:20px 22px 23px}.card-text h3{margin:0 0 7px;font-size:19px}.card-text p{margin:0;color:var(--muted);font-size:12px;line-height:1.9}.pill-row{display:flex;flex-wrap:wrap;gap:7px;margin-top:13px}.pill{border-radius:99px;background:#fdf0d9;padding:5px 9px;color:#896344;font-size:10px;font-weight:700}
+    .organ-note{margin-top:18px;padding:18px 20px;border-radius:18px;background:#f4f0df;color:#6d664d;font-size:12px;line-height:1.9}.organ-note strong{color:#554b3a}
+    .winning{display:grid;grid-template-columns:.8fr 1.2fr;gap:24px;align-items:center;padding:26px;border-radius:26px;background:linear-gradient(120deg,#ffedc8,#ffe3d8 55%,#fff3d4)}.winning h3{font-size:22px;margin:5px 0}.winning p{font-size:12px;color:#766454;line-height:1.9;margin:0}.win-list{display:grid;gap:9px}.win-row{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border-radius:15px;background:rgba(255,255,255,.72);font-size:12px;color:#68574a}.win-row b{color:#d07664;white-space:nowrap}
+    .footer{padding:22px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;color:#8f7d6e;font:800 10px var(--en);letter-spacing:.06em}.footer a:hover{color:#d17668}
+    @media(max-width:850px){.hero{grid-template-columns:1fr;gap:30px;padding-top:48px}.board-frame{max-width:620px;margin:auto}.board-frame img{max-height:520px}.howto{grid-template-columns:1fr 1fr}.game-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:580px){.wrap{width:min(100% - 30px,520px)}.hero{padding:38px 0 54px}.section{padding:52px 0}.section-head{display:block}.section-copy{margin-top:14px}.game-grid,.cards-grid,.howto,.winning{grid-template-columns:1fr}.board-frame img{max-height:420px}.card-show img{height:300px}.footer{flex-wrap:wrap}}
+    body.game-open{overflow:hidden}.nav-actions{display:flex;align-items:center;gap:18px}.play-trigger{border:0;border-radius:99px;padding:9px 14px;background:#f7d779;color:#604a36;font:900 11px var(--font);cursor:pointer}.play-trigger:hover{background:#f2c965}
+    .draw-overlay{position:fixed;inset:0;z-index:40;display:grid;place-items:center;padding:18px;background:rgba(64,51,43,.48);backdrop-filter:blur(7px);opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s}.draw-overlay.is-open{opacity:1;visibility:visible}
+    .draw-panel{position:relative;width:min(900px,100%);max-height:min(92vh,900px);overflow:auto;padding:clamp(20px,4vw,38px);border:1px solid #efd9b8;border-radius:30px;background:radial-gradient(circle at 90% 0,#fff0d8,transparent 28%),#fffdf7;box-shadow:0 28px 100px rgba(43,34,29,.32)}
+    .draw-close{position:absolute;right:17px;top:15px;width:38px;height:38px;border:0;border-radius:50%;background:#f8edda;color:#765b44;font-size:22px;cursor:pointer}.draw-intro{text-align:center;padding:14px 20px 10px}.draw-intro .eyebrow{margin-bottom:8px}.draw-intro h2,.draw-heading h2{margin:0;color:#574139;font-size:clamp(28px,5vw,42px);letter-spacing:-.05em}.draw-intro p{max-width:560px;margin:10px auto 24px;color:#796b60;font-size:13px;line-height:1.9}
+    .deck-choice{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:630px;margin:0 auto}.deck-choice button{display:grid;justify-items:center;gap:11px;padding:16px 12px;border:1px solid #efdfc8;border-radius:22px;background:#fffaf0;color:#55443a;font:800 14px var(--font);cursor:pointer;transition:transform .2s,box-shadow .2s}.deck-choice button:hover{transform:translateY(-4px);box-shadow:0 12px 24px rgba(149,104,64,.12)}.deck-choice img{width:100%;max-width:120px;height:150px;object-fit:contain}.deck-choice small{color:#97816c;font:700 10px var(--en)}
+    .draw-screen[hidden],.draw-result[hidden]{display:none}.draw-heading{display:flex;align-items:end;justify-content:space-between;gap:15px;margin:12px 0 22px;padding-right:42px}.draw-heading p{margin:5px 0 0;color:#796b60;font-size:12px}.draw-count{white-space:nowrap;color:#a16f4c;font-size:12px;font-weight:800}.draw-layout{display:grid;grid-template-columns:1fr 230px;gap:22px;align-items:start}.draw-grid{position:relative;display:block;width:100%;height:clamp(250px,34vw,330px);perspective:1000px}.draw-card{position:absolute;left:50%;top:4px;width:clamp(100px,15vw,145px);aspect-ratio:713/1003;padding:0;border:0;border-radius:14px;background:transparent;cursor:pointer;perspective:900px;transform:translateX(calc(-50% + var(--fan-x,0px))) rotate(var(--fan-angle,0deg));transform-origin:50% 95%;transition:transform .24s cubic-bezier(.2,.8,.2,1),opacity .2s}.draw-card:not(.is-drawn):hover,.draw-card:not(.is-drawn):focus-visible{z-index:20!important;transform:translateX(calc(-50% + var(--fan-x,0px))) translateY(-14px) rotate(var(--fan-angle,0deg))}.draw-card-inner{display:block;position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .72s cubic-bezier(.2,.8,.2,1)}.draw-card.is-flipped .draw-card-inner{transform:rotateY(180deg)}.draw-face{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;border-radius:12px;backface-visibility:hidden;filter:drop-shadow(0 7px 9px rgba(62,50,41,.16))}.draw-face.front{transform:rotateY(180deg)}.draw-card.is-drawn{cursor:default}.draw-card:focus-visible{outline:3px solid #df907b;outline-offset:4px;border-radius:14px}
+    .draw-result{position:sticky;top:0;padding:15px;border:1px dashed #e6cda9;border-radius:20px;background:#fff8e9;text-align:center}.draw-result img{width:100%;max-height:230px;object-fit:contain}.draw-result h3{margin:8px 0 5px;color:#574139;font-size:17px}.draw-result p{margin:0;color:#796b60;font-size:11px;line-height:1.8}.draw-placeholder{padding:30px 12px;color:#a18b74;font-size:12px;line-height:1.8}.draw-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:9px;margin-top:22px}.draw-actions button{border:0;border-radius:99px;padding:10px 15px;background:#f7d779;color:#604a36;font:800 12px var(--font);cursor:pointer}.draw-actions button.secondary{background:#f8edda;color:#765b44}.draw-actions button:disabled{opacity:.45;cursor:default}
+    @media(max-width:650px){.nav-actions{gap:8px}.back{font-size:9px}.play-trigger{padding:8px 10px;font-size:10px}.draw-layout{grid-template-columns:1fr}.draw-result{position:static;display:grid;grid-template-columns:90px 1fr;column-gap:12px;text-align:left;align-items:center}.draw-result img{grid-row:span 2;max-height:115px}.draw-result h3{align-self:end}.draw-result p{align-self:start}.draw-grid{height:260px}.draw-card{width:clamp(82px,23vw,120px)}.draw-heading{display:block}.draw-count{display:block;margin-top:8px}}
+    @media(prefers-reduced-motion:reduce){.draw-overlay,.draw-card-inner,.draw-card{transition:none!important}}
+    .play-trigger{position:fixed;right:24px;bottom:24px;z-index:25;padding:13px 18px;box-shadow:0 9px 26px rgba(123,90,52,.2)}
+    .site-nav-wrap{width:min(1240px,calc(100% - 40px));min-height:74px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .site-brand{display:inline-flex;align-items:center;gap:9px;white-space:nowrap;color:#493d35;font:900 15px/1 Nunito,sans-serif;letter-spacing:-.045em}
+    .site-brand i{color:#897e72;font-style:normal;font-weight:800}
+    .site-brand-mark{display:grid;place-items:center;width:28px;height:28px;border-radius:11px 11px 11px 4px;background:#e9f1dc;color:#64894a;font-size:17px}
+    .site-nav-links{display:flex;align-items:center;gap:clamp(12px,2.2vw,28px);color:#665b50;font:900 11px/1 Nunito,sans-serif;letter-spacing:.07em}
+    .site-nav-links>a,.site-work-menu summary a{display:inline-flex;align-items:center;gap:6px;padding:12px 0;transition:color .18s ease}
+    .site-nav-links a:hover,.site-work-menu[open] summary a{color:#658a4b}
+    .site-work-menu{position:relative}.site-work-menu summary{list-style:none;cursor:pointer}.site-work-menu summary::-webkit-details-marker{display:none}
+    .site-work-menu summary a span{color:#8fae6e;font-size:14px}
+    .site-dropdown{position:absolute;top:calc(100% + 7px);left:-18px;z-index:30;width:270px;padding:8px;border:1px solid #eee4d1;border-radius:18px;background:rgba(255,253,247,.98);box-shadow:0 16px 38px rgba(81,67,47,.16)}
+    .site-dropdown a{display:grid;grid-template-columns:28px 1fr;align-items:center;gap:2px 8px;padding:11px 10px;border-radius:12px;color:#493d35;font:900 12px/1.3 "Noto Sans TC",sans-serif;letter-spacing:0}
+    .site-dropdown a:hover{background:#f1f5e9}.site-dropdown b{grid-row:span 2;color:#79965d;font:900 11px Nunito,sans-serif}
+    .site-dropdown a span{grid-column:2;color:#93877a;font:800 8px Nunito,sans-serif;letter-spacing:.06em}
+    .site-nav-links .site-nav-contact{padding:11px 15px;border:1px solid #d8e4c9;border-radius:99px;background:#f7faef}
+    @media(max-width:700px){.site-nav-wrap{width:calc(100% - 28px);min-height:0;padding:13px 0;flex-wrap:wrap}.site-nav-links{width:100%;justify-content:space-between;gap:8px;font-size:10px}.site-nav-links>a,.site-work-menu summary a{padding:8px 0}.site-nav-links .site-nav-contact{padding:8px 11px}.site-dropdown{left:0}}
+
+    @media(max-width:650px){.play-trigger{right:14px;bottom:14px}}
+  </style>
+</head>
+<body>
+  <header class="topbar"><nav class="site-nav-wrap" aria-label="主要導覽"><a class="site-brand" href="index.html#home" aria-label="YUSHAN LAB 首頁"><span class="site-brand-mark">✿</span><span>YUSHAN <i>/ PLAY LAB</i></span></a><div class="site-nav-links"><details class="site-work-menu"><summary><a href="index.html#work">WORK <span>⌄</span></a></summary><div class="site-dropdown"><a href="moss.html"><b>01</b> 蘚・微境 <span>MOSS / MICROSCAPE</span></a><a href="kikiline.html"><b>02</b> KIKILINE <span>FRIENDLY DIGITAL GUIDE</span></a><a href="chi-bao-bao.html"><b>03</b> 吃飽飽 <span>FOOD & DIGESTION GAME</span></a></div></details><a href="index.html#lab">PLAY LAB</a><a href="index.html#about">ABOUT</a><a class="site-nav-contact" href="index.html#contact">SAY HELLO ↗</a></div></nav></header>
+  <button class="play-trigger" id="reopenGame" type="button" aria-label="重新開啟吃飽飽抽卡遊戲">抽卡遊戲 ↗</button>
+  <div class="draw-overlay is-open" id="drawGame" role="dialog" aria-modal="true" aria-labelledby="drawTitle">
+    <div class="draw-panel"><button class="draw-close" id="closeGame" type="button" aria-label="關閉抽卡遊戲">×</button>
+      <section class="draw-screen" id="deckSelect"><div class="draw-intro"><div class="eyebrow">A LITTLE CARD DRAW</div><h2 id="drawTitle">吃飽飽抽卡時間！</h2><p>選一個牌組，挑一張背面朝上的卡牌抽出來。翻牌後，才會看到卡片正面與它的小知識。</p><div class="deck-choice"><button type="button" data-deck="food"><img src="assets/chi-bao-bao/food-back.png" alt="食物卡牌背面"><span>抽食物卡</span><small>FOOD DECK / 3 CARDS</small></button><button type="button" data-deck="organ"><img src="assets/chi-bao-bao/organ-back.png" alt="消化部位卡牌背面"><span>抽消化部位卡</span><small>DIGESTIVE ORGANS / 5 CARDS</small></button></div></div></section>
+      <section class="draw-screen" id="drawDeck" hidden><div class="draw-heading"><div><div class="eyebrow" id="deckEyebrow">PICK A FACE-DOWN CARD</div><h2 id="deckTitle">選一張卡</h2><p>點擊任一張背面卡牌，抽出後就會翻開。</p></div><span class="draw-count" id="drawCount"></span></div><div class="draw-layout"><div class="draw-grid" id="drawGrid" aria-label="背面朝上的卡牌"></div><aside class="draw-result" id="drawResult" hidden aria-live="polite"></aside></div><div class="draw-actions"><button class="secondary" id="changeDeck" type="button">換一個牌組</button><button class="secondary" id="finishGame" type="button">進入專案介紹</button></div></section>
+    </div>
+  </div>
+  <main>
+    <section class="hero wrap">
+      <div><div class="eyebrow">CASE 03 / FOOD & DIGESTION GAME</div><h1>吃飽飽<span>Bon Appétit!</span></h1><p class="lead">今天吃了什麼？一場從餐桌出發的消化冒險。透過食物卡和消化部位卡配對，認識營養物質如何被身體分解，也學習唾液、胃液、胰液、膽汁與腸液的作用。</p><div class="hero-badges"><span class="badge">桌上遊戲</span><span class="badge">營養知識</span><span class="badge">消化道探索</span><span class="badge">歡樂互動</span></div></div>
+      <figure class="board-frame"><img src="assets/chi-bao-bao/board-1.png" alt="吃飽飽桌遊底圖：人物與消化道，以及食物卡、消化部位卡的示意" fetchpriority="high"><figcaption class="board-caption"><span>THE DIGESTIVE ADVENTURE BOARD</span><span>點亮每一站，吃得剛剛好</span></figcaption></figure>
+    </section>
+    <section class="section"><div class="wrap"><div class="section-head"><div><div class="eyebrow">01 / THE IDEA</div><h2>把營養知識<br><span>變成餐桌遊戲。</span></h2></div><div class="section-copy"><p>玩家沿著消化旅程探索不同食物，利用各部位的消化液與營養條件進行配對。遊戲把知識藏進翻牌、配對與小小競賽，讓學習像一頓有趣的飯。</p></div></div><div class="game-grid"><article class="game-card"><div class="icon">🍽️</div><h3>五種用餐時段</h3><p>早餐、午餐、下午茶、晚餐與宵夜，各有對應的食物卡，讓均衡飲食成為遊戲目標。</p><span class="count">食物卡共 30 張</span></article><article class="game-card"><div class="icon">🧠</div><h3>認識消化腺</h3><p>從唾液、胃液到胰液、膽汁與腸液，透過卡牌條件認識它們能分解哪些營養物質。</p><span class="count">消化部位卡共 70 張</span></article><article class="game-card"><div class="icon">🏁</div><h3>蒐集與判斷</h3><p>將食物卡放入用餐時段，再依食物上的營養提示，判斷能配對的消化部位卡。</p><span class="count">適合一起動腦同樂</span></article></div></div></section>
+    <section class="section"><div class="wrap"><div class="section-head"><div><div class="eyebrow">02 / HOW TO PLAY</div><h2>翻開卡牌，<br><span>開始消化之旅。</span></h2></div><div class="section-copy"><p>每位玩家輪流操作並準備好自己的卡牌區域。當所有人準備完成，翻開底圖，根據食物卡上的營養物質進行消化部位卡配對。</p></div></div><div class="howto"><article class="step"><h3>準備卡牌</h3><p>玩家拿取 5 張消化部位卡，並將食物卡背面朝上放入對應的用餐時段。</p></article><article class="step"><h3>放好部位卡</h3><p>每位玩家在底圖的對應位置覆蓋一張消化部位卡，準備完成後一同翻開底圖。</p></article><article class="step"><h3>配對與 PK</h3><p>依食物卡標示的營養物質，與能分解它的消化液卡牌對照；符合條件的部位可參與比拼。</p></article><article class="step"><h3>收集並計分</h3><p>符合條件的部位卡中，數字最大者贏得食物卡。依手冊的用餐時段與均衡飲食條件判定勝利。</p></article></div></div></section>
+    <section class="section"><div class="wrap"><div class="section-head"><div><div class="eyebrow">03 / THE CARD SET</div><h2>兩種卡牌，<br><span>一場營養配對。</span></h2></div><div class="section-copy"><p>卡牌圖像使用可愛的食物和器官角色，讓每種營養與消化功能都更容易辨認。</p></div></div><div class="cards-grid"><article class="card-show"><img src="assets/chi-bao-bao/food-cards.jpg" alt="吃飽飽食物卡，包含五種用餐時段與不同餐點" loading="lazy"><div class="card-text"><h3>食物卡｜一天五餐</h3><p>共 30 張，分為早餐、午餐、下午茶、晚餐與宵夜五種時段。每張卡呈現餐點和營養線索，鼓勵玩家搭配出多元、均衡的一日飲食。</p><div class="pill-row"><span class="pill">早餐</span><span class="pill">午餐</span><span class="pill">下午茶</span><span class="pill">晚餐</span><span class="pill">宵夜</span></div></div></article><article class="card-show"><img src="assets/chi-bao-bao/organ-cards.jpg" alt="消化部位卡，展示唾腺、胃腺、胰臟、肝臟與腸腺" loading="lazy"><div class="card-text"><h3>消化部位卡｜消化腺小隊</h3><p>共 70 張，分數 1 至 7；每個消化部位依分數配置不同張數。玩家根據卡牌上的營養提示，配對可分解該營養的消化液。</p><div class="pill-row"><span class="pill">唾腺・唾液</span><span class="pill">胃腺・胃液</span><span class="pill">胰臟・胰液</span><span class="pill">肝臟・膽汁</span><span class="pill">腸腺・腸液</span></div></div></article></div><div class="organ-note"><strong>消化小知識：</strong>依遊戲說明，唾液可分解澱粉；胃液可分解蛋白質；胰液可分解醣類、蛋白質與脂質；膽汁可乳化脂質；腸液可分解醣類與蛋白質。</div></div></section>
+    <section class="section"><div class="wrap"><div class="winning"><div><div class="eyebrow">04 / WINNING THE GAME</div><h3>吃得均衡，<br>就是大贏家！</h3><p>遊戲以累積五個用餐時段的食物卡為目標，也鼓勵玩家嘗試不同種類的餐點。</p></div><div class="win-list"><div class="win-row"><b>均衡達成</b><span>最先收齊早餐、午餐、下午茶、晚餐與宵夜五種時段食物卡，並喊出「我吃飽了」即可獲勝。</span></div><div class="win-row"><b>最多種類</b><span>若食物卡都分配完仍無人收齊五餐，擁有最多用餐時段種類的玩家獲勝。</span></div><div class="win-row"><b>平手加賽</b><span>若仍平手，依手冊規則以擲骰方式決勝。</span></div></div></div></div></section>
+  </main>
+  <footer class="footer wrap"><span>© <span id="year"></span> YUSHAN / PLAY LAB</span><span>吃飽飽 — TABLE GAME</span><a href="index.html#work">BACK TO PROJECTS ↑</a></footer>
+  <script>
+    document.getElementById('year').textContent=new Date().getFullYear();
+    const drawGame=document.getElementById('drawGame');
+    const deckSelect=document.getElementById('deckSelect');
+    const drawDeck=document.getElementById('drawDeck');
+    const drawGrid=document.getElementById('drawGrid');
+    const drawResult=document.getElementById('drawResult');
+    const drawCount=document.getElementById('drawCount');
+    const decks={
+      food:{title:'食物卡',back:'assets/chi-bao-bao/food-back.png',cards:[
+        {title:'早餐｜水煮蛋',image:'assets/chi-bao-bao/breakfast.png',detail:'早餐時段的一份水煮蛋，卡面提示你留意食物中的蛋白質。'},
+        {title:'晚餐｜奶油燉飯',image:'assets/chi-bao-bao/dinner.png',detail:'晚餐時段的奶油燉飯，從卡面圖示觀察不同營養線索。'},
+        {title:'宵夜｜烤蝦',image:'assets/chi-bao-bao/night-snack.png',detail:'宵夜時段的烤蝦，翻開卡片看看這份餐點帶來什麼營養提示。'}
+      ]},
+      organ:{title:'消化部位卡',back:'assets/chi-bao-bao/organ-back.png',cards:[
+        {title:'嘴巴｜唾液',image:'assets/chi-bao-bao/mouth.png',detail:'唾液可分解澱粉。看看食物卡上的營養提示，找找能配對的食物。'},
+        {title:'胃｜胃液',image:'assets/chi-bao-bao/stomach.png',detail:'胃液可分解蛋白質，卡面數字也會參與遊戲中的比拼。'},
+        {title:'胰臟｜胰液',image:'assets/chi-bao-bao/pancreas.png',detail:'胰液可分解醣類、蛋白質與脂質，是多種營養的好幫手。'},
+        {title:'肝臟｜膽汁',image:'assets/chi-bao-bao/liver.png',detail:'膽汁能乳化脂質，讓脂質的消化更容易進行。'},
+        {title:'腸道｜腸液',image:'assets/chi-bao-bao/intestine.png',detail:'腸液可分解醣類與蛋白質，完成這趟消化旅程。'}
+      ]}
+    };
+    let activeDeck=null;
+    let remaining=[];
+    const openGame=()=>{drawGame.classList.add('is-open');document.body.classList.add('game-open');deckSelect.hidden=false;drawDeck.hidden=true;};
+    const closeGame=()=>{drawGame.classList.remove('is-open');document.body.classList.remove('game-open');};
+    document.getElementById('closeGame').addEventListener('click',closeGame);
+    document.getElementById('finishGame').addEventListener('click',closeGame);
+    document.getElementById('reopenGame').addEventListener('click',openGame);
+    drawGame.addEventListener('click',event=>{if(event.target===drawGame)closeGame()});
+    document.addEventListener('keydown',event=>{if(event.key==='Escape'&&drawGame.classList.contains('is-open'))closeGame()});
+    function updateCount(){drawCount.textContent=`牌堆還有 ${remaining.length} 張`;}
+    function showDeck(type){
+      activeDeck=decks[type];remaining=activeDeck.cards.map((_,index)=>index);
+      document.getElementById('deckTitle').textContent=`抽一張${activeDeck.title}`;
+      document.getElementById('deckEyebrow').textContent=type==='food'?'FOOD DECK / PICK ONE':'DIGESTIVE ORGANS / PICK ONE';
+      drawGrid.replaceChildren();drawResult.hidden=true;drawResult.replaceChildren();
+      remaining.forEach((cardIndex,slot)=>{
+        const button=document.createElement('button');button.type='button';button.className='draw-card';button.setAttribute('aria-label',`抽取第 ${slot+1} 張背面卡牌`);
+        const middle=(remaining.length-1)/2;const offset=slot-middle;button.style.setProperty('--fan-x',(offset*42)+'px');button.style.setProperty('--fan-angle',(offset*11)+'deg');button.style.zIndex=String(10-Math.round(Math.abs(offset)));const inner=document.createElement('span');inner.className='draw-card-inner';
+        const back=document.createElement('img');back.className='draw-face back';back.src=activeDeck.back;back.alt='卡牌背面';
+        inner.append(back);button.append(inner);button.addEventListener('click',()=>drawOne(button));drawGrid.append(button);
+      });
+      deckSelect.hidden=true;drawDeck.hidden=false;updateCount();
+    }
+    function drawOne(button){
+      const cardIndex=remaining.splice(Math.floor(Math.random()*remaining.length),1)[0];
+      const card=activeDeck.cards[cardIndex];const front=document.createElement('img');front.className='draw-face front';front.src=card.image;front.alt=card.title;
+      button.querySelector('.draw-card-inner').append(front);button.classList.add('is-flipped','is-drawn');button.disabled=true;button.setAttribute('aria-label',`已抽出：${card.title}`);
+      drawResult.innerHTML=`<img src="${card.image}" alt=""><h3>${card.title}</h3><p>${card.detail}</p>`;drawResult.hidden=false;updateCount();
+      if(!remaining.length)drawCount.textContent='牌堆已抽完！';
+    }
+    document.querySelectorAll('[data-deck]').forEach(button=>button.addEventListener('click',()=>showDeck(button.dataset.deck)));
+    document.getElementById('changeDeck').addEventListener('click',()=>{drawDeck.hidden=true;deckSelect.hidden=false});
+    openGame();
+  </script>
+  <script>
+    (() => {
+      const menu = document.querySelector('.site-work-menu');
+      if (!menu) return;
+      if (location.hash === '#work') menu.open = true;
+      document.addEventListener('pointerdown', event => {
+        if (!menu.contains(event.target)) menu.open = false;
+      });
+      document.addEventListener('keydown', event => {
+        if (event.key === 'Escape') menu.open = false;
+      });
+    })();
+  </script>
+
+</body>
+</html>
+er-box}html{scroll-behavior:smooth;scroll-padding-top:82px}body{margin:0;background:radial-gradient(circle at 10% 15%,#fff0d0 0,transparent 23%),radial-gradient(circle at 92% 34%,#ffe9dc 0,transparent 25%),var(--cream);color:var(--ink);font-family:var(--font);line-height:1.75;overflow-x:hidden}
     body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.28;background-image:radial-gradient(#efc993 1px,transparent 1px);background-size:24px 24px;mask-image:linear-gradient(to bottom,transparent,#000 18%,#000 80%,transparent);z-index:-1}
     a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 44px));margin:auto}.en,.eyebrow,.tag{font-family:var(--en)}
     .topbar{position:sticky;top:0;z-index:10;background:rgba(255,250,239,.9);backdrop-filter:blur(14px);border-bottom:1px solid rgba(215,177,127,.3)}.nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font:900 15px var(--en);letter-spacing:-.04em;color:#5e493b}.brand i{display:inline-block;width:11px;height:11px;margin-right:9px;border-radius:50% 50% 50% 0;background:var(--coral);transform:rotate(-45deg)}.back{font:800 11px var(--en);letter-spacing:.08em;color:#8b6d56}.back:hover{color:#d17668}
